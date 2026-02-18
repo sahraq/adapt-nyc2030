@@ -107,12 +107,17 @@ h3 {
     letter-spacing: 0.02em;
 }
 
-/* BODY TEXT */
 p {
     max-width: 65ch;
-    margin-bottom: 1.6rem;
+    margin: 0 auto 1.6rem auto; /* centers text block */
     font-size: 1.1rem;
 }
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 
 /* BLOCKQUOTE */
 blockquote {
