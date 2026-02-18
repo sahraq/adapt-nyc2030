@@ -1,19 +1,18 @@
+/* Base */
 html {
     font-size: 100%;
 }
 
 body { 
-    font-family: Georgia, "Times New Roman", serif; /* editorial feel */
+    font-family: "Georgia", "Times New Roman", serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(
-        to bottom,
-        #DED4C6,
-        #DCDEC6
-    );
-    color: #1a1a1a;  /* softer than pure black */
-    line-height: 1.75;
-    font-size: 1.05rem;
+    background: linear-gradient(to bottom, #DED4C6, #DCDEC6);
+    color: #222222; /* softer than black */
+    line-height: 1.8;
+    font-size: 1.08rem;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 * {
@@ -23,47 +22,50 @@ body {
 /* HEADER */
 header {
     background: linear-gradient(135deg, #DEC6DC, #C6DCDE);
-    padding: 3rem 1.5rem;
+    padding: 3.5rem 1.5rem;
     text-align: center;
     position: sticky;
     top: 0;
-    width: 100%;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 3rem;
+    font-weight: 600;
     letter-spacing: -0.02em;
+    margin: 0;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav ul {
-    padding: 1.5rem 0 0 0;
+    padding: 1.8rem 0 0 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.2rem;
     margin: 0;
 }
 
 nav a {
-    color: #1a1a1a;
-    text-decoration: none;
+    font-family: system-ui, sans-serif;
+    font-size: 0.95rem;
     font-weight: 600;
-    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333333;
     position: relative;
-    padding-bottom: 4px;
 }
 
 nav a::after {
     content: "";
     display: block;
-    height: 3px;
-    background: #C6DEC8;
+    height: 2px;
+    background: #C6DED4;
     width: 0%;
     transition: width 0.3s ease;
+    margin-top: 4px;
 }
 
 nav a:hover::after,
@@ -71,53 +73,62 @@ nav a:focus::after {
     width: 100%;
 }
 
-/* MAIN CONTAINER */
+/* CONTAINER */
 .container {
-    width: 100%;
-    max-width: 65rem;
-    margin: 4rem auto;
-    padding: 0 1.5rem;
+    max-width: 60rem;
+    margin: 5rem auto;
+    padding: 0 2rem;
 }
 
-/* SECTION BLOCKS (editorial card feel) */
+/* SECTION (clean — no peach border) */
 section {
-    background-color: #ffffffcc; /* subtle transparency */
-    backdrop-filter: blur(4px);
-    padding: 2.5rem;
-    margin-bottom: 3rem;
-    border-left: 6px solid #DEC6D0;
-    border-radius: 8px;
+    margin-bottom: 4rem;
+    padding: 0;
+    background: transparent;
 }
 
 /* HEADINGS */
 h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #DEC6D0;
-    border-bottom: 3px solid #C6DED4;
-    display: inline-block;
-    padding-bottom: 6px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #333333;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-family: system-ui, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
     margin-top: 2rem;
-    color: #C6DCDE;
+    color: #555555;
+    letter-spacing: 0.02em;
 }
 
-/* PARAGRAPHS */
+/* BODY TEXT */
 p {
-    margin-bottom: 1.2rem;
     max-width: 65ch;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* BLOCKQUOTE */
+blockquote {
+    font-style: italic;
+    margin: 3rem 0;
+    padding: 1.5rem 2rem;
+    background: #C6DCDE;
+    border-radius: 8px;
+    font-size: 1.15rem;
 }
 
 /* BUTTONS */
 button {
     background: linear-gradient(135deg, #C6DED4, #C6DEC8);
-    color: #1a1a1a;
-    padding: 0.9rem 1.7rem;
+    color: #222222;
+    padding: 0.9rem 1.8rem;
     border: none;
-    border-radius: 40px; /* pill shape */
+    border-radius: 40px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -128,25 +139,15 @@ button {
 button:hover,
 button:focus {
     transform: translateY(-3px);
-    background: #DEC8C6;
-    outline: 3px solid #1a1a1a;
+    background: #DEC6D0;
+    outline: 3px solid #222222;
     outline-offset: 3px;
-}
-
-/* BLOCKQUOTE */
-blockquote {
-    font-style: italic;
-    padding: 2rem;
-    margin: 3rem 0;
-    background-color: #C6DCDE;
-    border-left: 8px solid #DEC6DC;
-    border-radius: 6px;
 }
 
 /* FOOTER */
 footer {
     background: #DEC6DC;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
