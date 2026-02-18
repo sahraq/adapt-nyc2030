@@ -8,8 +8,8 @@ body {
                  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #111111;
+    background-color: #90d8b2;
+    color: #90d8b2;
     line-height: 1.7;
     font-size: 1rem;
 }
@@ -21,7 +21,7 @@ body {
 
 /* Header */
 header {
-    background-color: #1e3a8a;
+    background-color: #9b8bf4;
     padding: 2rem 1.25rem; /* changed to rem */
     text-align: center;
     position: sticky;
@@ -33,7 +33,7 @@ header h1 {
     margin: 0;
     font-size: 2.4rem;
     font-weight: 800;
-    color: #ffffff;
+    color: #8dd2dd;
     letter-spacing: 0.03em;
     word-wrap: break-word; /* prevents overflow at zoom */
 }
@@ -81,7 +81,7 @@ nav a:focus {
 
 /* Headings */
 h2, h3 {
-    color: #1e3a8a;
+    color: #8dd2dd;
     font-weight: 700;
     margin-top: 2.5rem;
     word-wrap: break-word;
@@ -102,7 +102,7 @@ p {
 
 /* Buttons */
 button {
-    background-color: #0f766e;
+    background-color: #8babf1;
     color: #ffffff;
     padding: 0.75rem 1.5rem;
     border: none;
