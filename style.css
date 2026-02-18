@@ -94,13 +94,13 @@ h3 {
     color: #555555;
     letter-spacing: 0.02em;
 }
-<body>
+
 p {
     max-width: 65ch;
     margin: 0 auto 1.6rem auto; /* centers text block */
     font-size: 1.1rem;
 }
-</body>
+
 h2 {
     text-align: center;
     margin-bottom: 2rem;
