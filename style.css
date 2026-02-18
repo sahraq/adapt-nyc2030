@@ -72,14 +72,14 @@ nav a:focus::after {
     width: 100%;
 }
 
-/* CONTAINER */
+/* container */
 .container {
     max-width: 60rem;
     margin: 5rem auto;
     padding: 0 2rem;
 }
 
-/* SECTION — white bubble kept, peach border removed */
+/* sections*/
 section {
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(6px);
@@ -89,7 +89,7 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* HEADINGS */
+/* headings */
 h2 {
     font-family: "Playfair Display", Georgia, serif;
     font-size: 2.2rem;
@@ -119,42 +119,4 @@ h2 {
 }
 
 
-/* BLOCKQUOTE */
-blockquote {
-    font-style: italic;
-    margin: 3rem 0;
-    padding: 1.8rem 2.2rem;
-    background: #C6DCDE;
-    border-radius: 10px;
-    font-size: 1.15rem;
-}
 
-/* BUTTONS */
-button {
-    background: linear-gradient(135deg, #C6DED4, #C6DEC8);
-    color: #222222;
-    padding: 0.9rem 1.8rem;
-    border: none;
-    border-radius: 40px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    min-height: 44px;
-}
-
-button:hover,
-button:focus {
-    transform: translateY(-3px);
-    background: #DEC6D0;
-    outline: 3px solid #222222;
-    outline-offset: 3px;
-}
-
-/* FOOTER */
-footer {
-    background: #DEC6DC;
-    padding: 2.5rem 1rem;
-    text-align: center;
-    margin-top: 5rem;
-}
