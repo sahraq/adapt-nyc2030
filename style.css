@@ -1,20 +1,23 @@
+/* Accessible, readable system font stack */
 body { 
-    font-family: 'Courier New', monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;   /* clean white background */
-    color: #1a1a1a;              /* strong readable text */
+    background-color: #ffffff;
+    color: #111111;
     line-height: 1.7;
+    font-size: 1rem;
 }
 
 /* Headings */
 h1, h2, h3 {
-    color: #111111;
+    color: #1e3a8a; /* Indigo primary */
     margin-bottom: 15px;
     font-weight: 700;
 }
 
-/* Remove background blocks behind paragraphs */
+/* Paragraph spacing */
 p {
     margin-bottom: 16px;
 }
@@ -27,9 +30,9 @@ p {
     padding: 20px;
 }
 
-/* Header - high contrast */
+/* Header */
 header {
-    background-color: #1f2933;   /* dark navy-gray */
+    background-color: #1e3a8a; /* Indigo */
     padding: 20px 40px;
     display: flex;
     align-items: center;
@@ -41,7 +44,7 @@ header {
 header h1 {
     font-size: 2em;
     margin: 0;
-    color: #ffffff;  /*  contrast compliant */
+    color: #ffffff; /* strong contrast */
 }
 
 /* Navigation */
@@ -54,56 +57,58 @@ nav ul {
 
 nav a {
     color: #ffffff;
-    text-decoration: underline;   /* do not rely on color alone */
+    text-decoration: underline;
     font-weight: 600;
 }
 
-/* Accessible hover + focus */
+/* Accessible hover & focus */
 nav a:hover,
 nav a:focus {
-    color: #ffd54f;  /* accessible gold */
-    outline: 2px solid #ffd54f;
+    background-color: #0f766e; /* Teal */
+    outline: 3px solid #ffffff;
     outline-offset: 3px;
+    border-radius: 4px;
 }
 
 /* Buttons */
 button {
-    background-color: #0b5ed7;   /* accessible blue */
+    background-color: #0f766e; /* Teal */
     color: #ffffff;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
-    font-size: 1em;
+    border-radius: 6px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
 }
 
 button:hover,
 button:focus {
-    background-color: #084298;   /* darker for contrast */
-    outline: 3px solid #ffd54f;
+    background-color: #115e59; /* darker teal */
+    outline: 3px solid #1e3a8a;
     outline-offset: 2px;
 }
 
 /* Images */
 img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-bottom: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #1f2933;
+    background-color: #1e3a8a;
     color: #ffffff;
     text-align: center;
     padding: 15px 0;
 }
 
-/* FAQ section */
+/* FAQ Section */
 .faq-section h3 {
     padding: 10px 0;
     font-weight: 600;
+    color: #0f766e; /* teal accent */
 }
 
 /* Blockquote */
@@ -111,10 +116,10 @@ blockquote {
     font-size: 1.1em;
     font-style: italic;
     padding: 15px;
-    border-left: 5px solid #0b5ed7;
+    border-left: 6px solid #0f766e;
     margin: 20px 0;
-    color: #333333;
-    background-color: #f8f9fa; /* very light gray */
+    color: #1e3a8a;
+    background-color: #f0fdfa; /* very light teal tint */
 }
 
 /* Lists */
@@ -125,4 +130,10 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+}
+
+/* Universal focus style */
+:focus {
+    outline: 3px solid #0f766e;
+    outline-offset: 3px;
 }
