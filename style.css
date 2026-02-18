@@ -74,19 +74,24 @@ nav a:focus::after {
 
 /* CONTAINER */
 .container {
-    max-width: 60rem;
-    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
     padding: 0 2rem;
+    margin: 5rem 0;
 }
 
-/* SECTION — white bubble kept, peach border removed */
+/* CENTERED READING COLUMN */
 section {
-    background-color: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(6px);
-    padding: 3rem;
-    margin-bottom: 4rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 58rem;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    padding: 3.5rem 4rem;
+    border-radius: 16px;
+    position: relative;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.06),
+        0 0 0 1px rgba(255, 255, 255, 0.4) inset;
 }
 
 /* HEADINGS */
@@ -110,8 +115,13 @@ h3 {
 /* BODY TEXT */
 p {
     max-width: 65ch;
-    margin-bottom: 1.6rem;
+    margin: 0 auto 1.6rem auto; /* centers text block */
     font-size: 1.1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 /* BLOCKQUOTE */
