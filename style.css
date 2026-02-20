@@ -55,15 +55,20 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: #333333;
-    text-align: center;
     position: relative;
     padding: 0.3rem 0; 
 }
 ul li {
   float: left;
-  border-right: 1px solid #bbbbbb;
+  border-right: 3px solid #010101;
 }
-
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 ul li:last-child {
   border-right: none;
 }
