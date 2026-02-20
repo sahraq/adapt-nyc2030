@@ -58,7 +58,14 @@ nav a {
     position: relative;
     padding: 0.3rem 0; 
 }
+ul li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
 
+ul li:last-child {
+  border-right: none;
+}
 
 /* container */
 .container {
