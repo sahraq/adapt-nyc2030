@@ -58,16 +58,6 @@ nav a {
     position: relative;
     padding: 0.3rem 0; 
 }
-ul li {
-  float: left;
-  border-right: 3px solid #010101;
-}
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
 
 /* container */
 .container {
