@@ -132,11 +132,11 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Buttons */
+/***** Buttons (Matching Page Hero Blue) *****/
 .btn {
     display: inline-block;
-    background: white;
-    color: #0066cc;
+    background: #0066cc; /* same blue as .page-hero */
+    color: #000000; /* black text */
     padding: .8rem 1.6rem;
     border-radius: 8px;
     font-weight: 600;
@@ -145,7 +145,8 @@ body {
 }
 
 .btn:hover {
-    background: #e6f0ff;
+    background: #0052a3; /* slightly darker shade for hover */
+    color: #000000;
 }
 
 /* Cards */
