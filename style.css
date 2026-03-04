@@ -169,11 +169,6 @@ body {
     color: #f0f4f8; /* slightly softened white for long text readability */
 }
 
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-}
 /* Page Headers */
 .page-hero {
     background: #0066cc;
