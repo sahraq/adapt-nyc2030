@@ -136,7 +136,7 @@ body {
 .btn {
     display: inline-block;
     background: #0066cc; /* same blue as .page-hero */
-    color: #000000; /* black text */
+    color: #FFFFFF; /* WHITE text */
     padding: .8rem 1.6rem;
     border-radius: 8px;
     font-weight: 600;
@@ -146,7 +146,7 @@ body {
 
 .btn:hover {
     background: #0052a3; /* slightly darker shade for hover */
-    color: #000000;
+    color:#FFFFFF;
 }
 
 /* Cards */
