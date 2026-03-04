@@ -46,41 +46,28 @@ body {
     align-items: center;
     padding: 1.2rem 0;
 }
-/* Make the nav bar itself blue */
-nav {
-  background-color: #0077cc; /* solid blue background */
-  padding: 1rem 2rem; /* spacing around nav items */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-/* Logo styling */
 .logo {
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #ffffff; /* make logo white so it contrasts with blue */
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #111;
 }
 
-/* Nav list horizontal */
 .nav-list {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 
-/* Nav links white on blue */
 .nav-list a {
-  text-decoration: none;
-  color: #ffffff; /* white text on blue background */
-  font-weight: 600;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
 }
 
-/* Hover effect for links */
 .nav-list a:hover {
-  color: #ffdd57; /* a warm highlight on hover */
+    color: #0066cc;
 }
 
 /* Hero */
@@ -219,4 +206,3 @@ nav {
         flex-direction: column;
     }
 }
-
