@@ -142,8 +142,8 @@ body {
     background: white;
     padding: 2rem;
     border-radius: 14px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-    flex: 1 1 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--primary);
 }
 
 .card h3 {
